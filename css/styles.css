@@ -1,0 +1,154 @@
+:root {
+    --mainColor: #111;
+    --secondColor: #fff8df;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--secondColor);
+    font-family: 'Space Grotesk', sans-serif;
+    cursor: none;
+}
+
+body {
+    background-color: var(--mainColor);
+}
+
+header {
+    width: 85%;
+
+    padding: 20px 0;
+    margin: 2em auto 5em auto;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+main {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+}
+
+svg .title {
+    fill: var(--secondColor);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    margin-top: 8em;
+}
+
+.content {
+    padding: 4em;
+    position: relative;
+}
+
+.c-40 {
+    width: 40%;
+}
+
+.c-60 {
+    width: 60%;
+}
+
+#photo {
+    width: 100%;
+    height: 40vw;
+    object-fit: cover;
+}
+
+#globe {
+    position: absolute;
+    width: 80%;
+    height: 45vw;
+    top: -50%;
+    z-index: -1;
+}
+
+#globe .text {
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.about {
+    position: absolute;
+    top: calc(45vw / 2);
+    width: 50%;
+    left: 25%;
+    transform: translateX(-25%);
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+#cursor {
+    position: fixed;
+    background-color: var(--secondColor);
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transition: width .2s ease-in-out, height .2s ease-in-out;
+    transform: translate(-50%, -50%);
+}
+
+#cursor.active {
+    width: 6em;
+    height: 6em;
+}
+
+.link-container {
+    position: relative;
+}
+
+span.hover-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: var(--secondColor);
+    opacity: 0;
+    transition: opacity .2s, transform .2s;
+}
+
+span.hover-link:hover::after,
+span.hover-link:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+
+span.hover-link::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+span.hover-link:hover::after,
+span.hover-link:focus::after{
+  transform: scale(1);
+}
