@@ -1,13 +1,13 @@
 var globe = document.querySelector("#globe");
 
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, globe.clientWidth / globe.clientHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(55, globe.clientWidth / (globe.clientWidth/2), 0.1, 1000);
 
 const renderer = new THREE.WebGLRenderer({
     alpha: true
 });
 
-renderer.setSize(globe.clientWidth, globe.clientHeight);
+renderer.setSize(globe.clientWidth, (globe.clientWidth/2));
 globe.appendChild(renderer.domElement);
 
 var geometry = new THREE.SphereGeometry(0.5, 16, 8);

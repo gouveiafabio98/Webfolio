@@ -78,3 +78,55 @@
         transform: translateX(0%);
     }
 }
+
+/* ---------------- LINKS AND MOUSE ANMATION ---------------- */
+
+#cursor {
+    position: fixed;
+    background-color: var(--secondColor);
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transition: width .2s ease-in-out, height .2s ease-in-out;
+    transform: translate(-50%, -50%);
+}
+
+#cursor.active {
+    width: 6em;
+    height: 6em;
+}
+
+.link-container {
+    position: relative;
+}
+
+span.hover-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: var(--secondColor);
+    opacity: 0;
+    transition: opacity .2s, transform .2s;
+}
+
+span.hover-link:hover::after,
+span.hover-link:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+
+span.hover-link::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+span.hover-link:hover::after,
+span.hover-link:focus::after{
+  transform: scale(1);
+}
