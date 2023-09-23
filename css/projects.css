@@ -1,0 +1,131 @@
+.banner {
+    width: 100%;
+    height: 60vh;
+    object-fit: contain;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.banner-content {
+    position: relative;
+    height: fit-content;
+    height: 100%;
+}
+
+.banner img {
+    width: 100%;
+    object-fit: cover;
+    transform: translate(0, -50%);
+    filter: grayscale(0) brightness(50%);
+}
+
+.banner .title {
+    width: 85%;
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+
+    margin-bottom: 2em;
+}
+
+.banner .title h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+}
+
+.banner .title h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 4em;
+    margin: 0;
+}
+
+.banner+main {
+    padding-top: 60vh;
+}
+
+.tags {
+    display: flex;
+    text-align: right;
+}
+
+.tag {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+    font-size: 1.5em;
+}
+
+.tags .circle {
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+    margin-right: .5em;
+    box-shadow: 1px 1px 5px #2e222f;
+}
+
+.tags .circle.red {
+    background-color: #e83b3b;
+}
+
+.tags .circle.blue {
+    background-color: #4d65b4;
+}
+
+.tags .circle.yellow {
+    background-color: #f9c22b;
+}
+
+.project-text {
+    font-size: 1.5em;
+}
+
+.grid-item img {
+    width: 100%;
+}
+
+/* ---- grid-item ---- */
+
+:root {
+    --grid-column: 6;
+    --grid-gutter: 2em;
+    --grid-sizer: calc((100% - (var(--grid-gutter) * (var(--grid-column) - 1))) / var(--grid-column));
+}
+
+.grid-sizer {
+    width: var(--grid-sizer);
+}
+
+.gutter-sizer {
+    width: var(--grid-gutter);
+  }
+
+.grid-item {
+    float: left;
+    width: var(--grid-sizer);
+    padding-bottom: 2em;
+}
+
+.grid-item--width2 {
+    width: calc(var(--grid-sizer) * 2 + var(--grid-gutter));
+}
+
+.grid-item--width3 {
+    width: calc(var(--grid-sizer) * 3 + var(--grid-gutter) * 2);
+}
+
+.grid-item--width4 {
+    width: calc(var(--grid-sizer) * 4 + var(--grid-gutter) * 3);
+}
+
+.grid-item--width5 {
+    width: calc(var(--grid-sizer) * 5 + var(--grid-gutter) * 4);
+}
+
+.grid-item--width6 {
+    width: 100%;
+}
