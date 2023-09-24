@@ -85,6 +85,15 @@
     background-color: #f9c22b;
 }
 
+.project-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-info span {
+    width: calc(100% / 3 - 5%);
+}
+
 .project-text {
     font-size: 1.5em;
 }
@@ -180,5 +189,46 @@
 
     .banner+main {
         padding-top: calc(60vh - 40px - 8.5em + 6em);
+    }
+}
+
+
+/* ---- grid-item ---- */
+
+:root {
+    --p-grid-column: 2;
+    --p-grid-gutter: 10%;
+    --p-grid-sizer: calc((100% - (var(--p-grid-gutter) * (var(--p-grid-column) - 1))) / var(--p-grid-column));
+}
+
+.grid {
+    height: 100vh;
+}
+
+.p-grid-sizer {
+    width: var(--p-grid-sizer);
+}
+
+.p-gutter-sizer {
+    width: var(--p-grid-gutter);
+}
+
+.p-grid-item {
+    float: left;
+    width: var(--p-grid-sizer);
+    padding-bottom: 8em;
+}
+
+.p-grid-item--width2 {
+    width: calc(var(--p-grid-sizer) * 2 + var(--p-grid-gutter));
+}
+
+@media screen and (max-width: 993px) {
+
+    .p-grid-item--width1,
+    .p-grid-item--width2,
+    .p-grid-item {
+        width: 100%;
+        padding-bottom: 4em;
     }
 }
