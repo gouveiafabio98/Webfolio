@@ -8,7 +8,15 @@ function initLocomotiveScroll() {
 
     locoScroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
-        smooth: true
+        smooth: true,
+        mobile: {
+           smooth: true,
+           breakpoint: 0
+       },
+       tablet: {
+           smooth: true,
+           breakpoint: 0
+       }
     });
 }
 

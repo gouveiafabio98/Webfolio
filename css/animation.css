@@ -102,7 +102,8 @@
     position: relative;
 }
 
-span.hover-link::after {
+span.hover-link::after,
+a.hover-link::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -115,18 +116,23 @@ span.hover-link::after {
 }
 
 span.hover-link:hover::after,
-span.hover-link:focus::after {
+span.hover-link:focus::after,
+a.hover-link:hover::after,
+a.hover-link:focus::after {
     opacity: 1;
     transform: translate3d(0, 0.2em, 0);
 }
 
-span.hover-link::after {
+span.hover-link::after,
+a.hover-link::after {
     opacity: 1;
     transform: scale(0);
     transform-origin: center;
 }
 
 span.hover-link:hover::after,
-span.hover-link:focus::after{
+span.hover-link:focus::after,
+a.hover-link:hover::after,
+a.hover-link:focus::after {
   transform: scale(1);
 }
