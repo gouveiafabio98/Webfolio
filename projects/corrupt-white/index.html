@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fábio's Portfolio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/masonry.css">
+    <link rel="stylesheet" href="../../css/animation.css">
+    <link rel="stylesheet" href="../../css/locomotive-scroll.css"> <!-- LOCOMOTIVE SCROLL -->
+    <!-- FONT -->
+    <link href="../../css/fonts.css" rel="stylesheet"> <!-- SPACE GROTESK & INTER -->
+    <style>
+        @font-face {
+            font-family: 'Zsia';
+            src: url('Zsia.woff2') format('woff2');
+        }
+
+        .zsia {
+            font-family: 'Zsia';
+        }
+    </style>
+    <!-- JAVASCRIPT-->
+    <script src="../../js/three.js"></script> <!-- THREE.JS-->
+    <script src="../../js/locomotive-scroll.min.js"></script> <!-- LOCOMOTIVE SCROLL -->
+    <script src="../../js/masonry.pkgd.min.js"></script> <!-- MASONRY-->
+</head>
+
+<body data-scroll-container>
+    <header data-scroll-section>
+        <nav id="menu">
+            <div class="link-container">
+                <span class="hover-link">
+                    <a href="../../">About</a>
+                </span>
+            </div>
+            <div class="link-container">
+                <span class="hover-link">
+                    <a href="../">Work</a>
+                </span>
+            </div>
+            <div class="link-container">
+                <span class="hover-link">
+                    <a href="../../contact">Contact</a>
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner" data-scroll-section>
+        <div class="banner-content">
+            <img src="Website 2.png">
+            <div class="title">
+                <h1>Corrupt White</h1>
+                <div class="tags">
+                    <div class="tag">
+                        <div class="circle red"></div>
+                        <span class="name">3D Modeling</span>
+                    </div>
+                    <div class="tag">
+                        <div class="circle blue"></div>
+                        <span class="name">Graphic Design</span>
+                    </div>
+                    <div class="tag">
+                        <div class="circle yellow"></div>
+                        <span class="name">Creative Coding</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main data-scroll-section>
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="gutter-sizer grid-gutter"></div>
+            <div class="grid-item grid-item--width4">
+                <span class="project-text">
+                    It was created a visual identity for 2021 edition of the Ciclo de Conversas Design + Multimédia in
+                    the University of Coimbra.<br>
+                    For that, it was created a modular, square, robust font present throughout the identity. All the
+                    communication materials are wrapped in the event logo that acts as a container. The website is also
+                    wrapped by the logo that adapts to all screen formats and receives the information on it.
+                </span>
+            </div>
+            <div class="grid-item grid-item--width4">
+                <div class="format-hd">
+                <iframe src="https://www.youtube.com/embed/8QAoU4xoM4A?si=xpRTQiffzlh7CVx1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="grid-item grid-item--width4">
+                <img src="Website 1.png">
+            </div>
+            <div class="grid-item grid-item--width4">
+                <img src="Website 2.png">
+            </div>
+            <div class="grid-item grid-item--width2">
+                <img src="1.png">
+            </div>
+            <div class="grid-item grid-item--width2">
+                <img src="2.png">
+            </div>
+            <div class="grid-item grid-item--width2">
+                <img src="3.png">
+            </div>
+            <div class="grid-item grid-item--width2">
+                <img src="4.png">
+            </div>
+            <div class="grid-item grid-item--width2">
+                <img src="7.png">
+            </div>
+            <div class="grid-item grid-item--width2">
+                <img src="8.png">
+            </div>
+            <div class="grid-item grid-item--width6">
+                <div class="project-info">
+                    <span>Academic Project — LDM</span>
+                    <span>Collaboration: Laura Pais and Marcelo Coelho</span>
+                    <span>Tools: HTML, CSS, JavaScript, PHP, WebSockets, p5.js, Node.js, mySQL</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer data-scroll-section>
+        <span class="info">
+            Fábio Gouveia © 2023
+        </span>
+        <div class="social">
+            <div>
+                <span class="link-container">
+                    <a class="hover-link">E-mail</a>
+                </span>
+            </div>
+            <div>
+                <span class="link-container">
+                    <a class="hover-link">Behance</a>
+                </span>
+            </div>
+            <div>
+                <span class="link-container">
+                    <a class="hover-link">Linkedin</a>
+                </span>
+            </div>
+            <div>
+                <span class="link-container">
+                    <a class="hover-link">Instagram</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="cursor"></div>
+    <div class="hover">
+        <div class="noise"></div>
+    </div>
+    <script src="../../js/cursor.js"></script>
+    <script src="../../js/library_load.js"></script>
+</body>
+
+
+</html>

@@ -17,21 +17,6 @@
     text-decoration: none;
 }
 
-/* -------- LOCOMOTIVE SCROLL -------- */
-html.has-scroll-smooth {
-    backface-visibility: hidden;
-    transform: translateZ(0);
-}
-
-[data-load-container] {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-}
-
 /* -------- MAIN FORMATS -------- */
 h1,
 h2 {
@@ -48,6 +33,13 @@ h1 {
 h2 {
     font-size: 5em;
     margin-bottom: 5rem;
+}
+
+.font-display {
+    font-size: 4.5em;
+    line-height: 1.2em;
+    margin-top: 2rem;
+    display: block;
 }
 
 .format-hd {
@@ -76,6 +68,10 @@ h2 {
     display: none;
 }
 
+.bold {
+    font-weight: 700;
+}
+
 @media screen and (max-width: 993px) {
     h1 {
         font-size: 4em;
@@ -83,6 +79,10 @@ h2 {
 
     h2 {
         font-size: 2.5em;
+    }
+
+    .font-display {
+        font-size: 3em;
     }
 
     .c-mobile {
@@ -111,7 +111,7 @@ header {
     font-size: 2em;
     font-weight: 400;
 }
-
+    
 @media screen and (max-width: 993px) {
     #menu {
         font-size: 1.5em;
@@ -138,6 +138,14 @@ main {
 /* -------- ABOUT -------- */
 svg .f-white {
     fill: var(--scolor);
+}
+
+.open_icon {
+    display: inline;
+}
+
+.open_icon svg {
+    width: 1em;
 }
 
 #photo {
@@ -372,8 +380,9 @@ svg .f-white {
     height: 100%;
 }
 
-.banner img {
+.banner img, .banner video {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     filter: grayscale(0) brightness(50%);
     transform: translate(-50%, -50%);

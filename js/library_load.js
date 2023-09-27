@@ -1,26 +1,7 @@
 let locoScroll;
 var msnry;
 
-function initLocomotiveScroll() {
-    if (locoScroll) {
-        locoScroll.destroy(); // Destroy the existing instance
-    }
-
-    locoScroll = new LocomotiveScroll({
-        el: document.querySelector('[data-scroll-container]'),
-        smooth: true,
-        mobile: {
-            smooth: true,
-            breakpoint: 0
-        },
-        tablet: {
-            smooth: true,
-            breakpoint: 0
-        }
-    });
-}
-
-window.addEventListener("load", (event) => {
+function initMasonry() {
     if (typeof Masonry !== 'undefined') {
 
         var grid = document.getElementsByClassName('grid');
@@ -39,4 +20,29 @@ window.addEventListener("load", (event) => {
     }
 
     initLocomotiveScroll();
-});
+}
+
+function initLocomotiveScroll() {
+    if (locoScroll) {
+        locoScroll.destroy(); // Destroy the existing instance
+    }
+
+    locoScroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true,
+        mobile: {
+            smooth: true,
+            breakpoint: 0
+        },
+        tablet: {
+            smooth: true,
+            breakpoint: 0
+        }
+    });
+    
+    new ResizeObserver(() => locoScroll.update()).observe(
+        document.querySelector("[data-scroll-container]")
+    );
+}
+
+window.addEventListener("load", initMasonry);

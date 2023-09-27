@@ -1,0 +1,21 @@
+/*
+filter-mod (3D Modelling)
+filter-gd (Graphic Design)
+filter-cd (Creative Coding)
+*/
+
+#filter .grid-item {
+    display: none;
+}
+
+#filter.filter-mod .grid-item.mod {
+    display: block;
+}
+
+#filter.filter-gd .grid-item.gd {
+    display: block;
+}
+
+#filter.filter-cd .grid-item.cd {
+    display: block;
+}

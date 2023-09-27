@@ -1,1 +1,252 @@
-<!-- PROJECT LIST PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fábio's Portfolio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/masonry.css">
+    <link href="../css/filter.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/locomotive-scroll.css"> <!-- LOCOMOTIVE SCROLL -->
+    <!-- FONT -->
+    <link href="../css/fonts.css" rel="stylesheet"> <!-- SPACE GROTESK & INTER -->
+    <!-- JAVASCRIPT-->
+    <script src="../js/three.js"></script> <!-- THREE.JS-->
+    <script src="../js/locomotive-scroll.min.js"></script> <!-- LOCOMOTIVE SCROLL -->
+    <script src="../js/masonry.pkgd.min.js"></script> <!-- MASONRY-->
+</head>
+
+<body data-scroll-container>
+    <header data-scroll-section>
+        <nav id="menu">
+            <div class="link-container">
+                <span class="hover-link">
+                    <a href="#">About</a>
+                </span>
+            </div>
+            <div class="link-container">
+                <span class="hover-link">
+                    <a href="/projects">Work</a>
+                </span>
+            </div>
+            <div class="link-container">
+                <span class="hover-link">
+                    <a href="/contact">Contact</a>
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <main data-scroll-section>
+        <!-- SELECTED WORK -->
+        <div>
+            <h2>Projects</h2>
+            <div id="filter-tags">
+                <input type="checkbox" id="mod">
+                <label for="mod">3D Modelling</label>
+                <input type="checkbox" id="gd">
+                <label for="gd">Graphic Design</label>
+                <input type="checkbox" id="gc">
+                <label for="gc">Creative Coding</label>
+            </div>
+            <div class="grid projects" id="filter">
+                <div class="grid-sizer"></div>
+                <div class="gutter-sizer grid-gutter"></div>
+                <!-- SHAPESHIFTER -->
+                <div class="grid-item grid-item--width3 mod">
+                    <a href="shapeshifter/" class="data hover-link">
+                        <div class="title">
+                            <span class="name">Shapeshifter</span>
+                        </div>
+                        <div class="image">
+                            <video class="img" autoplay loop muted>
+                                <source src="shapeshifter/cover_2.mp4" type="video/mp4">
+                            </video>
+                            <div class="tags">
+                                <div class="tag">
+                                    <span class="name">3D Modeling</span>
+                                    <div class="circle red"></div>
+                                </div>
+                                <div class="tag">
+                                    <span class="name">Graphic Design</span>
+                                    <div class="circle blue"></div>
+                                </div>
+                                <div class="tag">
+                                    <span class="name">Creative Coding</span>
+                                    <div class="circle yellow"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- CRIMES EXEMPLARES -->
+                <div class="grid-item grid-item--width3 mod">
+                    <a href="crimes-exemplares/" class="data hover-link">
+                        <div class="title">
+                            <span class="name">Crimes Exemplares</span>
+                        </div>
+                        <div class="image">
+                            <img class="img" src="crimes-exemplares/3_1.png">
+                            <div class="tags">
+                                <div class="tag">
+                                    <span class="name">3D Modeling</span>
+                                    <div class="circle red"></div>
+                                </div>
+                                <div class="tag">
+                                    <span class="name">Graphic Design</span>
+                                    <div class="circle blue"></div>
+                                </div>
+                                <div class="tag">
+                                    <span class="name">Creative Coding</span>
+                                    <div class="circle yellow"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Disruptive -->
+                <div class="grid-item grid-item--width3 mod">
+                    <a href="disruptive/" class="data hover-link">
+                        <div class="title">
+                            <span class="name">Disruptive</span>
+                        </div>
+                        <div class="image">
+                            <img class="img" src="disruptive/Disruptive.png">
+                            <div class="tags">
+                                <div class="tag">
+                                    <span class="name">3D Modeling</span>
+                                    <div class="circle red"></div>
+                                </div>
+                                <div class="tag">
+                                    <span class="name">Graphic Design</span>
+                                    <div class="circle blue"></div>
+                                </div>
+                                <div class="tag">
+                                    <span class="name">Creative Coding</span>
+                                    <div class="circle yellow"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- CCDM -->
+                <div class="grid-item grid-item--width3 gd">
+                    <a href="ccdm/" class="data hover-link">
+                        <div class="title">
+                            <span class="name">CCDM</span>
+                        </div>
+                        <div class="image">
+                            <img class="img" src="ccdm/capa@4x.png">
+                            <div class="tags">
+                                <div class="tag">
+                                    <span class="name">3D Modeling</span>
+                                    <div class="circle red"></div>
+                                </div>
+                                <div class="tag">
+                                    <span class="name">Graphic Design</span>
+                                    <div class="circle blue"></div>
+                                </div>
+                                <div class="tag">
+                                    <span class="name">Creative Coding</span>
+                                    <div class="circle yellow"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Corrupt White -->
+                <div class="grid-item grid-item--width3 mod">
+                    <a href="corrupt-white/" class="data hover-link">
+                        <div class="title">
+                            <span class="name">Corrupt White</span>
+                        </div>
+                        <div class="image">
+                            <img class="img" src="corrupt-white/Website 2.png">
+                            <div class="tags">
+                                <div class="tag">
+                                    <span class="name">3D Modeling</span>
+                                    <div class="circle red"></div>
+                                </div>
+                                <div class="tag">
+                                    <span class="name">Graphic Design</span>
+                                    <div class="circle blue"></div>
+                                </div>
+                                <div class="tag">
+                                    <span class="name">Creative Coding</span>
+                                    <div class="circle yellow"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Osso -->
+                <div class="grid-item grid-item--width3">
+                    <a href="osso/" class="data hover-link">
+                        <div class="title">
+                            <span class="name">Osso</span>
+                        </div>
+                        <div class="image">
+                            <img class="img" src="osso/Osso Mockup PC.png">
+                            <div class="tags">
+                                <div class="tag">
+                                    <span class="name">3D Modeling</span>
+                                    <div class="circle red"></div>
+                                </div>
+                                <div class="tag">
+                                    <span class="name">Graphic Design</span>
+                                    <div class="circle blue"></div>
+                                </div>
+                                <div class="tag">
+                                    <span class="name">Creative Coding</span>
+                                    <div class="circle yellow"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer data-scroll-section>
+        <span class="info">
+            Fábio Gouveia © 2023
+        </span>
+        <div class="social">
+            <div>
+                <span class="link-container">
+                    <a class="hover-link">E-mail</a>
+                </span>
+            </div>
+            <div>
+                <span class="link-container">
+                    <a class="hover-link">Behance</a>
+                </span>
+            </div>
+            <div>
+                <span class="link-container">
+                    <a class="hover-link">Linkedin</a>
+                </span>
+            </div>
+            <div>
+                <span class="link-container">
+                    <a class="hover-link">Instagram</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- HOVER EFFECTS -->
+    <div id="cursor"></div>
+    <div class="hover">
+        <div class="noise"></div>
+    </div>
+    <!-- AFTER JAVASCRIPT -->
+    <script src="../js/cursor.js"></script> <!-- CURSOR ANIMATION -->
+    <script src="../js/library_load.js"></script> <!-- LOCOMOTIVE SCROLL + MASONRY -->
+    <script src="../js/filter.js"></script> <!-- PROJECT FILTER -->
+</body>
+
+</html>
