@@ -30,7 +30,7 @@
 .grid-item {
     float: left;
     width: var(--grid-sizer);
-    padding-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 .grid-item--width2 {
@@ -79,7 +79,7 @@
 .p-grid-item {
     float: left;
     width: var(--p-grid-sizer);
-    padding-bottom: 8em;
+    margin-bottom: 8em;
 }
 
 .p-grid-item--width2 {

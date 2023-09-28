@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fábio's Portfolio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/masonry.css">
+    <link rel="stylesheet" href="../../css/animation.css">
+    <link rel="stylesheet" href="../../css/locomotive-scroll.css"> <!-- LOCOMOTIVE SCROLL -->
+    <!-- FONT -->
+    <link href="../../css/fonts.css" rel="stylesheet"> <!-- SPACE GROTESK & INTER -->
+    <!-- JAVASCRIPT-->
+    <script src="../../js/three.js"></script> <!-- THREE.JS-->
+    <script src="../../js/locomotive-scroll.min.js"></script> <!-- LOCOMOTIVE SCROLL -->
+    <script src="../../js/masonry.pkgd.min.js"></script> <!-- MASONRY-->
+</head>
+
+<body data-scroll-container>
+    <header data-scroll-section>
+        <nav id="menu">
+            <div class="link-container">
+                <span class="hover-link">
+                    <a href="../../">About</a>
+                </span>
+            </div>
+            <div class="link-container">
+                <span class="hover-link">
+                    <a href="../">Work</a>
+                </span>
+            </div>
+            <div class="link-container">
+                <span class="hover-link">
+                    <a href="../../contact">Contact</a>
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner" data-scroll-section>
+        <div class="banner-content">
+            <img src="cover.png">
+            <div class="title">
+                <h1>Osso</h1>
+                <div class="tags">
+                    <div class="tag wd">
+                        <div class="circle"></div>
+                        <span class="name"></span>
+                    </div>
+                    <div class="tag pg">
+                        <div class="circle"></div>
+                        <span class="name"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main data-scroll-section>
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="gutter-sizer grid-gutter"></div>
+            <div class="grid-item grid-item--width3">
+                <span class="project-text">
+                    Osso is a website with BackOffice elaborated in an academic context based on the Osso Magazine and
+                    its content.<br>
+                    On the website, the user can browse through the various editions of Osso Magazine and its articles.
+                    A 3D element, shaped like a bone (osso in portuguese), was developed to accompany the user during
+                    his navigation through the website.
+                </span>
+            </div>
+            <div class="grid-item grid-item--width3">
+                <video autoplay loop muted>
+                    <source src="osso_1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="grid-item grid-item--width3">
+                <video autoplay loop muted>
+                    <source src="osso_2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="grid-item grid-item--width3">
+                <video autoplay loop muted>
+                    <source src="osso_3.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="grid-item grid-item--width6">
+                <div class="project-info">
+                    <span>Academic Project — MDM 2022</span>
+                    <span>Collaboration with Laura Pais and Francisca Calisto</span>
+                    <span>Tools: HTML, CSS, JavaScript, WordPress</span>
+                </div>
+            </div>
+    </main>
+
+    <footer data-scroll-section>
+        <span class="info">
+            Fábio Gouveia © 2023
+        </span>
+        <div class="social">
+            <div>
+                <span class="link-container">
+                    <a class="hover-link">E-mail</a>
+                </span>
+            </div>
+            <div>
+                <span class="link-container">
+                    <a class="hover-link">Behance</a>
+                </span>
+            </div>
+            <div>
+                <span class="link-container">
+                    <a class="hover-link">Linkedin</a>
+                </span>
+            </div>
+            <div>
+                <span class="link-container">
+                    <a class="hover-link">Instagram</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="cursor"></div>
+    <div class="hover">
+        <div class="noise"></div>
+    </div>
+    <script src="../../js/cursor.js"></script>
+    <script src="../../js/library_load.js"></script>
+</body>
+
+
+</html>

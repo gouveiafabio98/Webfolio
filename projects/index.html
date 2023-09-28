@@ -43,20 +43,48 @@
     <main data-scroll-section>
         <!-- SELECTED WORK -->
         <div>
-            <h2>Projects</h2>
-            <div id="filter-tags">
-                <input type="checkbox" id="mod">
-                <label for="mod">3D Modelling</label>
-                <input type="checkbox" id="gd">
-                <label for="gd">Graphic Design</label>
-                <input type="checkbox" id="gc">
-                <label for="gc">Creative Coding</label>
+            <h2>Projects <span id="filter-count"></span></h2>
+            <div>
+                <div id="filter-tags">
+                    <div id="all">
+                        <input type="checkbox">
+                        <label>All <span class="count"></span></label>
+                    </div>
+                    <div class="tag" id="mod"> <!-- 3D Modelling - mod -->
+                        <input type="checkbox">
+                        <label>3D Modelling <span class="count"></span></label>
+                    </div>
+                    <div class="tag" id="pg"> <!-- Programming - pg -->
+                        <input type="checkbox">
+                        <label>Programming <span class="count"></span></label>
+                    </div>
+                    <div class="tag" id="gd"> <!-- Graphic Design - gd -->
+                        <input type="checkbox">
+                        <label>Graphic Design <span class="count"></span></label>
+                    </div>
+                    <div class="tag" id="cd"> <!-- Creative Coding - cd -->
+                        <input type="checkbox">
+                        <label>Creative Coding <span class="count"></span></label>
+                    </div>
+                    <div class="tag" id="wd"> <!-- Web Design - wd -->
+                        <input type="checkbox">
+                        <label>Web Design <span class="count"></span></label>
+                    </div>
+                    <div class="tag" id="game"> <!-- Game Design - game -->
+                        <input type="checkbox">
+                        <label>Game Design <span class="count"></span></label>
+                    </div>
+                    <div class="tag" id="avr"> <!-- AR/VR - avr -->
+                        <input type="checkbox">
+                        <label>AR/VR <span class="count"></span></label>
+                    </div>
+                </div>
             </div>
-            <div class="grid projects" id="filter">
+            <div class="grid projects filter-all" id="filter">
                 <div class="grid-sizer"></div>
                 <div class="gutter-sizer grid-gutter"></div>
                 <!-- SHAPESHIFTER -->
-                <div class="grid-item grid-item--width3 mod">
+                <div class="grid-item grid-item--width4 mod pg cd">
                     <a href="shapeshifter/" class="data hover-link">
                         <div class="title">
                             <span class="name">Shapeshifter</span>
@@ -66,24 +94,24 @@
                                 <source src="shapeshifter/cover_2.mp4" type="video/mp4">
                             </video>
                             <div class="tags">
-                                <div class="tag">
-                                    <span class="name">3D Modeling</span>
-                                    <div class="circle red"></div>
+                                <div class="tag mod">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
                                 </div>
-                                <div class="tag">
-                                    <span class="name">Graphic Design</span>
-                                    <div class="circle blue"></div>
+                                <div class="tag pg">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
                                 </div>
-                                <div class="tag">
-                                    <span class="name">Creative Coding</span>
-                                    <div class="circle yellow"></div>
+                                <div class="tag cd">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <!-- CRIMES EXEMPLARES -->
-                <div class="grid-item grid-item--width3 mod">
+                <div class="grid-item grid-item--width2 mod gd avr">
                     <a href="crimes-exemplares/" class="data hover-link">
                         <div class="title">
                             <span class="name">Crimes Exemplares</span>
@@ -91,74 +119,219 @@
                         <div class="image">
                             <img class="img" src="crimes-exemplares/3_1.png">
                             <div class="tags">
-                                <div class="tag">
-                                    <span class="name">3D Modeling</span>
-                                    <div class="circle red"></div>
+                                <div class="tag mod">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
                                 </div>
-                                <div class="tag">
-                                    <span class="name">Graphic Design</span>
-                                    <div class="circle blue"></div>
+                                <div class="tag gd">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
                                 </div>
-                                <div class="tag">
-                                    <span class="name">Creative Coding</span>
-                                    <div class="circle yellow"></div>
+                                <div class="tag avr">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Stray Cat -->
+                <div class="grid-item grid-item--width4 mod">
+                    <a href="stray-cat/" class="data hover-link">
+                        <div class="title">
+                            <span class="name">Stray Cat</span>
+                        </div>
+                        <div class="image">
+                            <img class="img" src="stray-cat/cover.png">
+                            <div class="tags">
+                                <div class="tag mod">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Cultural Compass -->
+                <div class="grid-item grid-item--width2 mod avr cd">
+                    <a href="cultural-compass/" class="data hover-link">
+                        <div class="title">
+                            <span class="name">Cultural Compass</span>
+                        </div>
+                        <div class="image">
+                            <video class="img" autoplay loop muted>
+                                <source src="cultural-compass/animation.mp4" type="video/mp4">
+                            </video>
+                            <div class="tags">
+                                <div class="tag mod">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="tag avr">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="tag cd">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <!-- Disruptive -->
-                <div class="grid-item grid-item--width3 mod">
+                <div class="grid-item grid-item--width4 mod gd">
                     <a href="disruptive/" class="data hover-link">
                         <div class="title">
                             <span class="name">Disruptive</span>
                         </div>
                         <div class="image">
-                            <img class="img" src="disruptive/Disruptive.png">
+                            <img class="img" src="disruptive/4 - Room B.png">
                             <div class="tags">
-                                <div class="tag">
-                                    <span class="name">3D Modeling</span>
-                                    <div class="circle red"></div>
+                                <div class="tag mod">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
                                 </div>
-                                <div class="tag">
-                                    <span class="name">Graphic Design</span>
-                                    <div class="circle blue"></div>
-                                </div>
-                                <div class="tag">
-                                    <span class="name">Creative Coding</span>
-                                    <div class="circle yellow"></div>
+                                <div class="tag gd">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <!-- CCDM -->
-                <div class="grid-item grid-item--width3 gd">
+                <div class="grid-item grid-item--width2 gd wd pg">
                     <a href="ccdm/" class="data hover-link">
                         <div class="title">
                             <span class="name">CCDM</span>
                         </div>
                         <div class="image">
-                            <img class="img" src="ccdm/capa@4x.png">
+                            <img class="img" src="ccdm/cover.png">
                             <div class="tags">
-                                <div class="tag">
-                                    <span class="name">3D Modeling</span>
-                                    <div class="circle red"></div>
+                                <div class="tag gd">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
                                 </div>
-                                <div class="tag">
-                                    <span class="name">Graphic Design</span>
-                                    <div class="circle blue"></div>
+                                <div class="tag wd">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
                                 </div>
-                                <div class="tag">
-                                    <span class="name">Creative Coding</span>
-                                    <div class="circle yellow"></div>
+                                <div class="tag pg">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- City Generator -->
+                <div class="grid-item grid-item--width4 mod pg">
+                    <a href="city-generator/" class="data hover-link">
+                        <div class="title">
+                            <span class="name">City Generator</span>
+                        </div>
+                        <div class="image">
+                            <img class="img" src="city-generator/Render.png">
+                            <div class="tags">
+                                <div class="tag mod">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="tag pg">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Volumetric World -->
+                <div class="grid-item grid-item--width2 mod">
+                    <a href="volumetric-world/" class="data hover-link">
+                        <div class="title">
+                            <span class="name">Volumetric World</span>
+                        </div>
+                        <div class="image">
+                            <img class="img" src="volumetric-world/untitled.png">
+                            <div class="tags">
+                                <div class="tag mod">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- crimeStage -->
+                <div class="grid-item grid-item--width4 wd pg game">
+                    <a href="crime-stage/" class="data hover-link">
+                        <div class="title">
+                            <span class="name">crimeStage</span>
+                        </div>
+                        <div class="image">
+                            <img class="img" src="crime-stage/7.png">
+                            <div class="tags">
+                                <div class="tag game">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="tag wd">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="tag pg">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- MC Hospitality Advisors -->
+                <div class="grid-item grid-item--width2 wd pg">
+                    <a href="mc-hospitality-advisors/" class="data hover-link">
+                        <div class="title">
+                            <span class="name">MC Hospitality Advisors</span>
+                        </div>
+                        <div class="image">
+                            <img class="img" src="mc-hospitality-advisors/cover.png">
+                            <div class="tags">
+                                <div class="tag wd">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="tag pg">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Bear With Me -->
+                <div class="grid-item grid-item--width2 game pg">
+                    <a href="bear-with-me/" class="data hover-link">
+                        <div class="title">
+                            <span class="name">Bear With Me</span>
+                        </div>
+                        <div class="image">
+                            <img class="img" src="bear-with-me/cover.png">
+                            <div class="tags">
+                                <div class="tag game">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="tag pg">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <!-- Corrupt White -->
-                <div class="grid-item grid-item--width3 mod">
+                <div class="grid-item grid-item--width3 game wd pg">
                     <a href="corrupt-white/" class="data hover-link">
                         <div class="title">
                             <span class="name">Corrupt White</span>
@@ -166,42 +339,38 @@
                         <div class="image">
                             <img class="img" src="corrupt-white/Website 2.png">
                             <div class="tags">
-                                <div class="tag">
-                                    <span class="name">3D Modeling</span>
-                                    <div class="circle red"></div>
+                                <div class="tag game">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
                                 </div>
-                                <div class="tag">
-                                    <span class="name">Graphic Design</span>
-                                    <div class="circle blue"></div>
+                                <div class="tag wd">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
                                 </div>
-                                <div class="tag">
-                                    <span class="name">Creative Coding</span>
-                                    <div class="circle yellow"></div>
+                                <div class="tag pg">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <!-- Osso -->
-                <div class="grid-item grid-item--width3">
+                <div class="grid-item grid-item--width3 wd pg">
                     <a href="osso/" class="data hover-link">
                         <div class="title">
                             <span class="name">Osso</span>
                         </div>
                         <div class="image">
-                            <img class="img" src="osso/Osso Mockup PC.png">
+                            <img class="img" src="osso/cover.png">
                             <div class="tags">
-                                <div class="tag">
-                                    <span class="name">3D Modeling</span>
-                                    <div class="circle red"></div>
+                                <div class="tag wd">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
                                 </div>
-                                <div class="tag">
-                                    <span class="name">Graphic Design</span>
-                                    <div class="circle blue"></div>
-                                </div>
-                                <div class="tag">
-                                    <span class="name">Creative Coding</span>
-                                    <div class="circle yellow"></div>
+                                <div class="tag pg">
+                                    <span class="name"></span>
+                                    <div class="circle"></div>
                                 </div>
                             </div>
                         </div>

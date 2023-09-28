@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fábio's Portfolio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/masonry.css">
+    <link rel="stylesheet" href="../../css/animation.css">
+    <link rel="stylesheet" href="../../css/locomotive-scroll.css"> <!-- LOCOMOTIVE SCROLL -->
+    <!-- FONT -->
+    <link href="../../css/fonts.css" rel="stylesheet"> <!-- SPACE GROTESK & INTER -->
+    <!-- JAVASCRIPT-->
+    <script src="../../js/three.js"></script> <!-- THREE.JS-->
+    <script src="../../js/locomotive-scroll.min.js"></script> <!-- LOCOMOTIVE SCROLL -->
+    <script src="../../js/masonry.pkgd.min.js"></script> <!-- MASONRY-->
+</head>
+
+<body data-scroll-container>
+    <header data-scroll-section>
+        <nav id="menu">
+            <div class="link-container">
+                <span class="hover-link">
+                    <a href="../../">About</a>
+                </span>
+            </div>
+            <div class="link-container">
+                <span class="hover-link">
+                    <a href="../">Work</a>
+                </span>
+            </div>
+            <div class="link-container">
+                <span class="hover-link">
+                    <a href="../../contact">Contact</a>
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner" data-scroll-section>
+        <div class="banner-content">
+            <img src="cover.png">
+            <div class="title">
+                <h1>Cultural Compass</h1>
+                <div class="tags">
+                    <div class="tag mod">
+                        <div class="circle"></div>
+                        <span class="name"></span>
+                    </div>
+                    <div class="tag avr">
+                        <div class="circle"></div>
+                        <span class="name"></span>
+                    </div>
+                    <div class="tag cd">
+                        <div class="circle"></div>
+                        <span class="name"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main data-scroll-section>
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="gutter-sizer grid-gutter"></div>
+            <div class="grid-item grid-item--width4">
+                <span class="project-text">
+                    Crimes Exemplares (Exemplary Crimes) is a literary work, composed of small texts, that report
+                    various crimes, in the most varied forms and situations. Mostly surreal in nature. These criminal
+                    acts have impulses of extreme violence, without an ethical or moral nature, and, with its sort of
+                    comic speech, it enhances the absurd.<br>
+                    Two transmedia objects of this stories were developed, a board game and an augmented reality poster.
+                    In both the objects developed, these contrasting dualities were explored: the sobriety and the
+                    madness, the animal and the innocent, the veracity and the unbelief, supported by elements that
+                    create a connection to the crimes.<br>
+                    This two objects were displayed at the exhibition Formas: do Texto Tangível ao Imaterial in Convento
+                    de São Francisco, Coimbra (from November 7th, 2021 to January 2nd, 2022).
+                </span>
+            </div>
+            <div class="grid-item grid-item--width2">
+                <video autoplay loop muted>
+                    <source src="animation.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="grid-item grid-item--width4">
+                <div class="format-hd">
+                    <iframe src="https://www.youtube.com/embed/-i-kAqI2viQ?si=h8lUbLdeCzbfgtJ8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="grid-item grid-item--width6">
+                <div class="project-info">
+                    <span>Academic Project — MDM 2022</span>
+                    <span>Tools: Blender, A-Frame, HTML, CSS, JS</span>
+                </div>
+            </div>
+    </main>
+
+    <footer data-scroll-section>
+        <span class="info">
+            Fábio Gouveia © 2023
+        </span>
+        <div class="social">
+            <div>
+                <span class="link-container">
+                    <a class="hover-link">E-mail</a>
+                </span>
+            </div>
+            <div>
+                <span class="link-container">
+                    <a class="hover-link">Behance</a>
+                </span>
+            </div>
+            <div>
+                <span class="link-container">
+                    <a class="hover-link">Linkedin</a>
+                </span>
+            </div>
+            <div>
+                <span class="link-container">
+                    <a class="hover-link">Instagram</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="cursor"></div>
+    <div class="hover">
+        <div class="noise"></div>
+    </div>
+    <script src="../../js/cursor.js"></script>
+    <script src="../../js/library_load.js"></script>
+</body>
+
+
+</html>
