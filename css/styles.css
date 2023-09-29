@@ -284,6 +284,17 @@ svg .f-white {
     box-shadow: 0px 0px 28px black;
 }
 
+.projects .grid-item.clean {
+    box-shadow: none;
+}
+.projects .grid-item.clean .link-container {
+    display: inline;
+}
+
+.fit-container {
+    width: fit-content;
+}
+
 /* PROJECT TITLE START */
 .projects .title {
     padding: 0 0 1rem 1rem;
