@@ -11,38 +11,24 @@ let allTag = document.getElementById("all");
 allTag.check = allTag.querySelector("input");
 allTag.text = allTag.querySelector("span");
 
-function toggleFilter(e, stat) {
+function toggleFilter(e, stat, swap = true) {
     e.check.checked = stat;
     setFilterAmount(e);
     setFilterState(e, stat);
-    if(e == allTag) {
-        setAllFilterState(stat);
+
+    if (e != allTag) {
+        if(stat && allTag.check.checked) {
+            toggleFilter(allTag, false);
+        }
     } else {
-        checkFilterAll();
+        if(stat) {
+            for (let i = 0; i < filterTags.length; i++) {
+                toggleFilter(filterTags[i], false);
+            }
+        }
     }
 
     initMasonry();
-}
-
-function setAllFilterState(stat) {
-    for (let i = 0; i < filterTags.length; i++) {
-        toggleFilter(filterTags[i], stat);
-    }
-}
-
-function checkFilterAll() {
-    for (let i = 0; i < filterTags.length; i++) {
-        if(!filterTags[i].check.checked) {
-            allTag.check.checked = false;
-            setFilterAmount(allTag);
-            setFilterState(allTag, false);
-            return;
-        }
-    }
-    
-    allTag.check.checked = true;
-    setFilterAmount(allTag);
-    setFilterState(allTag, true);
 }
 
 function setFilterAmount(e) {

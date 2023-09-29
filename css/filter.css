@@ -39,7 +39,7 @@ input[type='checkbox']+label {
     padding: 10px;
     font-weight: 400;
     font-family: 'Space Grotesk', sans-serif;
-    margin-right: .75rem;
+    display: block;
 }
 
 input[type='checkbox']:checked+label,
@@ -47,4 +47,9 @@ input[type='checkbox']:checked+label span {
     font-weight: 600;
     color: var(--fcolor);
     background-color: var(--scolor);
+}
+
+#filter-tags div {
+    height: auto;
+    margin: 0 .75rem .75rem 0;
 }
