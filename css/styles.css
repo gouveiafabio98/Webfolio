@@ -17,6 +17,11 @@
     text-decoration: none;
 }
 
+[data-scroll-container],
+[data-scroll-section] {
+  perspective: 1px;
+}
+
 /* -------- MAIN FORMATS -------- */
 h1,
 h2,
@@ -35,7 +40,7 @@ h1 {
 
 h2 {
     font-size: 5em;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 h3 {
@@ -95,11 +100,15 @@ h4 {
 
 @media screen and (max-width: 993px) {
     h1 {
-        font-size: 4em;
+        font-size: 2.5em;
     }
 
     h2 {
         font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2em;
     }
 
     .font-display {
@@ -158,6 +167,12 @@ main {
 
     width: var(--content-w);
     margin: 0 auto 8em auto;
+}
+
+@media screen and (max-width: 993px) {
+    main {
+    margin: 0 auto 3em auto;
+}
 }
 
 /* -------- ABOUT -------- */
@@ -329,6 +344,16 @@ svg .f-white {
 
 .mail {
     position: relative;
+}
+
+@media screen and (max-width: 993px) {
+    .social .social-media {
+        margin-top: 4em;
+    }
+
+    .fit-container {
+        margin: 0 auto;
+    }
 }
 
 /* PROJECT TITLE START */
@@ -518,6 +543,12 @@ svg .f-white {
 
 .project-text {
     font-size: 1.5em;
+}
+
+@media screen and (max-width: 993px) {
+    .project-text {
+        font-size: 1em;
+    }
 }
 
 /* PROJECT CONTENT END */
