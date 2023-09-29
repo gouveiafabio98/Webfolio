@@ -19,10 +19,13 @@
 
 /* -------- MAIN FORMATS -------- */
 h1,
-h2 {
+h2,
+h3,
+h4 {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
+    word-break: break-word;
 }
 
 h1 {
@@ -33,6 +36,17 @@ h1 {
 h2 {
     font-size: 5em;
     margin-bottom: 5rem;
+}
+
+h3 {
+    font-size: 3em;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 1.8em;
+    margin-bottom: 1rem;
 }
 
 .font-display {
@@ -287,12 +301,34 @@ svg .f-white {
 .projects .grid-item.clean {
     box-shadow: none;
 }
+
 .projects .grid-item.clean .link-container {
     display: inline;
 }
 
 .fit-container {
     width: fit-content;
+}
+
+.social {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social .social-media {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8em;
+    word-break: normal;
+    flex-wrap: wrap;
+}
+
+.social .social-media div {
+    margin-bottom: 2em;
+}
+
+.mail {
+    position: relative;
 }
 
 /* PROJECT TITLE START */
@@ -543,48 +579,61 @@ footer .social div {
 .tags .tag.mod .name:after {
     content: "3D Modelling";
 }
+
 .tags .tag.mod .circle {
     background-color: #e83b3b;
 }
+
 /* ---------------------- */
 .tags .tag.pg .name:after {
     content: "Programming";
 }
+
 .tags .tag.pg .circle {
     background-color: #4d65b4;
 }
+
 /* ---------------------- */
 .tags .tag.gd .name:after {
     content: "Graphic Design";
 }
+
 .tags .tag.gd .circle {
     background-color: #f04f78;
 }
+
 /* ---------------------- */
 .tags .tag.cd .name:after {
     content: "Creative Codding";
 }
+
 .tags .tag.cd .circle {
     background-color: #f9c22b;
 }
+
 /* ---------------------- */
 .tags .tag.wd .name:after {
     content: "Web Design";
 }
+
 .tags .tag.wd .circle {
     background-color: #30e1b9;
 }
+
 /* ---------------------- */
 .tags .tag.game .name:after {
     content: "Game Design";
 }
+
 .tags .tag.game .circle {
     background-color: #a884f3;
 }
+
 /* ---------------------- */
 .tags .tag.avr .name:after {
     content: "AR/VR";
 }
+
 .tags .tag.avr .circle {
     background-color: #239063;
 }
