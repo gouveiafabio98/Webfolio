@@ -4,11 +4,13 @@ var currentLoad = 0,
 
 setTimeout(loadScreen, 50);
 
-window.addEventListener("load", function() {
+function finishLoad() {
     setTimeout(function() {
         loadBlock = false;
     }, 500);
-});
+};
+
+window.addEventListener("load", finishLoad);
 
 function loadScreen() {
     if (!loadBlock) {
