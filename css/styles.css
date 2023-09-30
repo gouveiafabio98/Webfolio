@@ -680,3 +680,42 @@ footer .social div {
         display: none;
     }
 }
+
+/* ---------------- LOADING ---------------- */
+
+#loading {
+    position: fixed;
+    background-color: var(--fcolor);
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 100);
+    transition: background-color 1s;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+
+#loading span {
+    color: var(--scolor);
+    font-size: 5em;
+    transition: color 1s;
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#loading span:first-of-type {
+    margin-bottom: 20px;
+}
+
+#loading.done {
+    background-color: transparent;
+    pointer-events: none;
+}
+
+#loading.done span {
+    color: transparent;
+    font-size: 5em;
+}
