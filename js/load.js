@@ -11,14 +11,13 @@ window.addEventListener("load", function() {
 });
 
 function loadScreen() {
-    if (!loadBlock) {
+    if (!loadBlock) {// Stop the loading animation when it's done
         loading.innerHTML = "100/100";
         document.getElementById("loading").classList.add("done");
+        clearInterval(loadInterval);
     } else if (currentLoad < 99) {
         currentLoad++;
         loading.innerHTML = currentLoad + "/100";
-    } else {
-        clearInterval(loadInterval); // Stop the loading animation when it's done
     }
 }
 
