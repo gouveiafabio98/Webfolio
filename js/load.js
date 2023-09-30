@@ -1,16 +1,14 @@
 var loading = document.getElementById("loading").children[1];
-var currentLoad = 0,
-    loadBlock = true;
+var currentLoad = 0;
+var loadBlock = true;
 
 setTimeout(loadScreen, 50);
 
-function finishLoad() {
+window.addEventListener("load", function() {
     setTimeout(function() {
         loadBlock = false;
     }, 500);
-};
-
-window.addEventListener("load", finishLoad);
+});
 
 function loadScreen() {
     if (!loadBlock) {
@@ -19,6 +17,10 @@ function loadScreen() {
     } else if (currentLoad < 99) {
         currentLoad++;
         loading.innerHTML = currentLoad + "/100";
-        setTimeout(loadScreen, 50);
+    } else {
+        clearInterval(loadInterval); // Stop the loading animation when it's done
     }
 }
+
+// Use setInterval for smoother animation updates
+var loadInterval = setInterval(loadScreen, 50);
