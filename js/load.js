@@ -1,25 +1,19 @@
 var loading = document.getElementById("loading").children[1];
 var currentLoad = 0;
-var loadBlock = true;
 
 setTimeout(loadScreen, 50);
 
 window.addEventListener("load", function() {
-    setTimeout(function() {
-        loadBlock = false;
-    }, 500);
+    clearInterval(loadInterval);
+    loading.innerHTML = "100/100";
+    document.getElementById("loading").classList.add("done");
 });
 
 function loadScreen() {
-    if (!loadBlock) {// Stop the loading animation when it's done
-        loading.innerHTML = "100/100";
-        document.getElementById("loading").classList.add("done");
-        clearInterval(loadInterval);
-    } else if (currentLoad < 99) {
+    if (currentLoad < 99) {
         currentLoad++;
         loading.innerHTML = currentLoad + "/100";
     }
 }
 
-// Use setInterval for smoother animation updates
 var loadInterval = setInterval(loadScreen, 50);
