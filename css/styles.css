@@ -43,6 +43,10 @@ h2 {
     margin-bottom: 4rem;
 }
 
+.grid-item h2 {
+    font-size: 3em;
+}
+
 h3 {
     font-size: 3em;
     margin-bottom: 1rem;
@@ -208,7 +212,6 @@ svg .f-white {
     font-size: 2em;
     font-weight: 400;
     padding-top: 20vw;
-    text-transform: uppercase;
     width: 80%;
     hyphens: auto;
     margin-left: auto;
@@ -227,7 +230,7 @@ svg .f-white {
     .about {
         margin: 0;
         width: 100%;
-        font-size: 1.5em;
+        font-size: .8em;
     }
 }
 
@@ -299,6 +302,7 @@ svg .f-white {
 
     #globe .text {
         bottom: 0;
+        font-size: 1.4em;
     }
 }
 
@@ -323,6 +327,10 @@ svg .f-white {
 
 .fit-container {
     width: fit-content;
+}
+
+footer .social{
+    margin: 0;
 }
 
 .social {
