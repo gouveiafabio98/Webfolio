@@ -436,8 +436,8 @@ footer .social{
 }
 
 .tags .circle {
-    width: 1em;
-    height: 1em;
+    width: .6em;
+    height: .6em;
     border-radius: 100%;
     margin-left: .5em;
     box-shadow: 1px 1px 5px #2e222f;
@@ -707,11 +707,11 @@ footer .social div {
 
 #loading span {
     color: var(--scolor);
-    font-size: 5em;
+    font-size: 4em;
     transition: color 1s;
     font-family: 'Space Grotesk', sans-serif;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 #loading span:first-of-type {
@@ -725,5 +725,5 @@ footer .social div {
 
 #loading.done span {
     color: transparent;
-    font-size: 5em;
+    font-size: 4em;
 }
