@@ -210,9 +210,9 @@ svg .f-white {
 .about {
     font-family: 'Inter', sans-serif;
     font-size: 2em;
-    font-weight: 400;
+    font-weight: 300;
     padding-top: 20vw;
-    width: 80%;
+    width: 70%;
     hyphens: auto;
     margin-left: auto;
 }
@@ -230,7 +230,7 @@ svg .f-white {
     .about {
         margin: 0;
         width: 100%;
-        font-size: .8em;
+        font-size: 1.5em;
     }
 }
 
