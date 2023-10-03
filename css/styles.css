@@ -213,6 +213,7 @@ svg .f-white {
     font-weight: 300;
     padding-top: 20vw;
     width: 70%;
+    hyphens: auto;
     margin-left: auto;
 }
 
