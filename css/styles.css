@@ -427,7 +427,7 @@ footer .social{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 0 0 .5rem 0;
+    margin: 0 0 .25rem 0;
     font-size: 1em;
 }
 
@@ -562,6 +562,15 @@ footer .social{
 @media screen and (max-width: 993px) {
     .project-text {
         font-size: 1em;
+    }
+
+    .project-info {
+        flex-direction: column;
+    }
+
+    .project-info span {
+        width: 100%;
+        margin-bottom: 2em;
     }
 }
 
